@@ -1,6 +1,27 @@
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+body {
+  display: block;
+  background: #ededed;
+  margin: 1em;
+  font: 16px arial,helvetica,clean,sans-serif;
+  line-height: 1.5em;
+}
 tei-teiheader {
   display: none;
 }
 tei-p,tei-ab {
   display:block;
+}
+tei-choice, tei-reg, tei-rdg {
+  display:none;
+}
+/* tei-lb::before {
+  white-space: pre;
+  content: '\A';
+} */
+tei-unclear::after {
+  text-emphasis-style: dot;
+  text-emphasis-position: under;
 }
